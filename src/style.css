@@ -1,0 +1,52 @@
+::after::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.GridBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.row {
+  display: flex;
+  gap: 10px;
+}
+.row div {
+  transition: 0.1s;
+  cursor: pointer;
+  width: 30px;
+  aspect-ratio: 1;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px black;
+}
+.row div:hover {
+  transform: scale(1.1);
+}
+.sea {
+  background-color: rgb(2, 93, 138);
+}
+.island {
+  background-color: rgb(205, 116, 0);
+}
+#button{
+  max-width: 120px;
+  margin: 20px auto;
+  padding: 10px;
+  cursor: pointer;
+  font-family: 'Fira Code';
+  background:rgb(30, 30, 30);
+  color:white;
+  border-radius: 5px;
+  transition: .2s;
+
+}
+#button:hover{
+  transform: scale(1.1);
+}
